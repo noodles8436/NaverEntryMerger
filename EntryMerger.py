@@ -529,7 +529,15 @@ class EntryMerger:
 if __name__ == "__main__":
     entMerge = EntryMerger()
     entMerge.MergeAllEnt()
-
-    entFile = EntryFile("./result.ent")
-    entFile.mergeVariable("실패한 횟수")
-    entFile.makeENTFile()
+    
+    # entFile 내에서 중복된 변수를 제거하기 위하여 사용됩니다.
+    # 같은 Entry 파일을 기반으로 미로 탈출 게임을 아이들이 모둠별로 만들었을 때,
+    # 미로 탈출에 실패할 횟수 변수 또한 각 파일별로 존재한다고 가정하겠습니다.
+    # 이때, 아이들이 만든 .ent 미로 탈출 게임 파일을 하나로 병합할 경우 
+    # 파일 마다 존재하는 변수는 각각 개별적인 변수들로 인식되어 병합된 파일에
+    # 저장되게 됩니다. 이로 인해 장면 별로 각각 다른 변수들이 사용됩니다.
+    # 하여, 장면 관계없이 중복된 변수를 하나로 통합하기 위해 아래의 코드를 사용하였숩니다.
+    
+    # entFile = EntryFile("./result.ent")
+    # entFile.mergeVariable("실패한 횟수")
+    # entFile.makeENTFile()
