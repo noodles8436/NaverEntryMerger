@@ -2,7 +2,7 @@
 Naver에서 제공하는 Entry Offline 파일들(.ent) 병합하는 Python 프로그램 입니다.  
   
 **본 프로젝트는 연세대학교 미래캠퍼스 2022 동계 머레이 봉사단 SWeet 팀**에서  
-Entry를 활용한 교육 프로그램에 사용하기 위하여 제작되었습니다.
+Entry를 활용한 교육 프로그램에 사용하기 위하여 제작하였습니다.
 
 ## What is Entry-Offline ?
 
@@ -20,3 +20,7 @@ python EntryMerger.py
 
 ## Requirements
 파이썬 내장 라이브러리만을 사용하였기 때문에 Python 만 설치되어 있으면 가능합니다! 
+
+## Contact
+연세대학교 미래캠퍼스 소프트웨어학부 김태욱 학부생  
+Email : xodnr8436@yonsei.ac.kr
